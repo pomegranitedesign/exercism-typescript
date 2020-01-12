@@ -37,22 +37,26 @@ export default class SpaceAge {
 
   // Calculate the age on Jupiter
   onJupiter() {
-    return 0;
+    const seconds = this.getEarthSeconds(11.862615);
+    return this.toNum(this.toFixed2(this._seconds / seconds));
   }
 
   // Calculate the age on Saturn
   onSaturn() {
-    return 0;
+    const seconds = this.getEarthSeconds(29.447498);
+    return this.toNum(this.toFixed2(this._seconds / seconds));
   }
 
   // Calculate the age on Uranus
   onUranus() {
-    return 0;
+    const seconds = this.getEarthSeconds(84.016846);
+    return this.toNum(this.toFixed2(this._seconds / seconds));
   }
 
   // Calculate the age on Neptune
   onNeptune() {
-    return 0;
+    const seconds = this.getEarthSeconds(164.79132);
+    return this.toNum(this.toFixed2(this._seconds / seconds));
   }
 
   // Helpers
